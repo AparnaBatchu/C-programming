@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+int x,y,num;
+printf("enter the value of base:");
+scanf("%d",&x);
+printf("enter the value of exp:");
+scanf("%d",&y);
+num=pow(x,y);
+printf("%d",num);
+}
+
+OUTPUT:
+enter the value of base:2
+enter the value of exp:5
+32
