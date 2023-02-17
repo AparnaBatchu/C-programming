@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+    float x,n;
+    printf("enter value of n:");
+    scanf("%f",&n);
+    x=1;
+    while(x<n)
+    {
+        printf("\n%.2f",x);
+        x=x+0.10;
+    }
+}
