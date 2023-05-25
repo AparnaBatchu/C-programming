@@ -1,0 +1,13 @@
+#include<stdio.h>
+main()
+{
+	int arr[]={10,20,10,20,30,20,40};
+	int len=sizeof(arr)/sizeof(int);
+	int n,i,cnt=0;
+	printf("enter number of elements:");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	if(arr[i]==n)
+	cnt++;
+	printf("\n%d",cnt);
+}
