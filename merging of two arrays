@@ -1,0 +1,22 @@
+#include <stdio.h>
+main()
+{
+    int arr1size = 3, arr2size = 3, total_arrsize, i, j;
+    int a[5] = { 1, 2, 3};
+    int b[5] = { 8, 9, 10};
+    total_arrsize = arr1size + arr2size;
+    int c[total_arrsize];
+    for (i = 0; i < arr1size; i++) 
+    {
+        c[i] = a[i];
+    }
+    for (i = 0, j = arr1size;
+         j <  total_arrsize && i < arr2size; i++, j++) 
+    {
+        c[j] = b[i];
+    }
+    for (i = 0; i < total_arrsize; i++) 
+    {
+        printf("%d ", c[i]);
+    }
+}
